@@ -1,0 +1,20 @@
+#arrays and lists
+
+#function to output the contents of a list
+def OutputList(Sentence):
+  for Word in Sentence:
+    print(Word + "", end="")
+  print(".")
+
+#main program
+Sentence = ["The ", "quick ", "brown ", "fox ", "jumps"]
+OutputList(Sentence)
+Sentence[1] = "small "
+Sentence[2] = "grey "
+Sentence[3] = "squirrel "
+OutputList(Sentence)
+Sentence[1] = "little "
+Sentence[2] = "brown "
+Sentence[3] = "tortoise "
+Sentence[4] = "crawled"
+OutputList(Sentence)

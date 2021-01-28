@@ -1,0 +1,24 @@
+#arrays and lists
+
+Product = [["" for X in range(2)] for Y in range(5)]
+
+#function to output the contents of a list
+UserInput = input("What Is Your Product Number? ")
+
+def NewDatabase():
+  global Product
+  Product[0][0] = "Cornflakes" ; Product[0][1] = "1.40"
+  Product[1][0] = "Weetabix" ; Product[1][1] = "1.20"
+  Product[2][0] = "Branflakes" ; Product[2][1] = "1.35"
+  Product[3][0] = "Choco Hoops" ; Product[3][1] = "2.10"
+  Product[4][0] = "Bread" ; Product[4][1] = "0.80"
+
+#subroutine to output a product from the list
+def OutputProduct(Number):
+  global Product
+  print("{}: £{}".format(Product[Number][0], Product[Number][1]))
+
+#Main program
+NewDatabase()
+ProductNumber = UserInput
+OutputProduct(ProductNumber)

@@ -1,0 +1,16 @@
+#arrays and lists
+
+#function to output the contents of a list
+def OutputList(Sentence):
+  for Word in Sentence:
+    print(Word + " ",end="")
+  print("")
+
+#main program
+Sentence = []
+for Counter in range(2):
+  Sentence.append("")
+
+Sentence[0] = "Hello"
+Sentence[1] = "World"
+OutputList(Sentence)

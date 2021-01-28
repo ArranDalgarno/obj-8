@@ -1,0 +1,11 @@
+#arrays and lists
+
+#function to output the contents of a list
+def OutputList(Sentence):
+  for Index in range(len(Sentence)):
+    Word = Sentence[Index]
+    print("Word {} is {}.".format(Index, Word))
+
+#Main Program
+Sentence = ["The", "quick", "brown", "fox", "jumps"]
+OutputList(Sentence)

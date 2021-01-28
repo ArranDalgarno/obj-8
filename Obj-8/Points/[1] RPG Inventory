@@ -1,0 +1,39 @@
+#RPG Inventory Problem
+inv = ["Bow", "Sword", "Health Potion", "Arrow", "Shield"]
+
+#function to output inventory
+def search():
+  print(inv)
+
+#function to allow user to drop item
+def drop():
+  print("Your Inventory Is Currently: ")
+  print(inv)
+  item = str(input("Which Item Would You Like To Drop? "))
+  inv.delete(item)
+
+#function to add an item to inv
+def pick():
+  y = input("Which Item Would You Like To Add To Your Inventory? ")
+  inv.append(y)
+  print("Your Inventory Is Now: ")
+  print(inv)
+  inv.append(y)
+
+#function to output an item in a given slot
+def pull():
+  z = int(input("Which Item Would You Like To View? "))
+  print(inv[z])
+
+#function to take user input of chosen function
+def choice():
+  choice = int(input("Enter 1 To Drop An Item, 2 To Add Item To Inventory Or 3 To Show An Item In A Slot: "))
+  return(choice)
+
+chosen_option = choice()
+if chosen_option == 1:
+  drop()
+elif chosen_option == 2:
+  pick()
+elif chosen_option == 3:
+  pull()
